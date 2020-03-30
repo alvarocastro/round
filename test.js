@@ -25,3 +25,30 @@ test('Should put the ninimum amount of decimals', t => {
 test('Should default the decimals amount to 2', t => {
 	t.is(round(1.111111), 1.11);
 });
+
+test('Should throw error if ’number’ is non numeric', t => {
+	t.throws(() => {
+		return round('bad');
+	}, {
+		instanceOf: TypeError,
+		message: 'Must pass a number'
+	});
+});
+
+test('Should throw error if ’decimals’ is not integer', t => {
+	t.throws(() => {
+		return round(1, 1.3);
+	}, {
+		instanceOf: TypeError,
+		message: 'The amount of decimals must be an integer number'
+	});
+});
+
+test('Should throw error if ’decimals’ is negative', t => {
+	t.throws(() => {
+		return round(1, -2);
+	}, {
+		instanceOf: TypeError,
+		message: 'The amount of decimals can’t be negative'
+	});
+});
