@@ -1,6 +1,6 @@
 {
   "name": "@alvarocastro/round",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Round values up to an amount of decimals",
   "main": "index.js",
   "scripts": {
