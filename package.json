@@ -1,0 +1,34 @@
+{
+  "name": "@alvarocastro/round",
+  "version": "0.0.1",
+  "description": "Round values up to an amount of decimals",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarocastro/round.git"
+  },
+  "keywords": [
+    "round",
+    "math",
+    "floating point"
+  ],
+  "author": "Alvaro Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarocastro/round/issues"
+  },
+  "engines": {
+    "node": "10 || >=12"
+  },
+  "homepage": "https://github.com/alvarocastro/round#readme",
+  "devDependencies": {
+    "ava": "^3.5.2",
+    "coveralls": "^3.0.11",
+    "nyc": "^15.0.0",
+    "xo": "^0.28.1"
+  }
+}
