@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/alvarocastro/round#readme",
   "devDependencies": {
-    "ava": "3.5.2",
+    "ava": "3.8.2",
     "coveralls": "3.0.11",
     "nyc": "15.0.0",
     "xo": "0.28.1"
